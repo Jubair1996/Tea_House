@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,7 +19,23 @@
     />
     <!-- Tailwind Css Links -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/f17fe590ba.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- Custom Tailwind CSS Links -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
     <style>
       .font-manrope {
         font-family: "Manrope", sans-serif;
@@ -29,14 +45,45 @@
   <body class="font-manrope">
     <!-- Header Section Starts -->
     <header>
-        
+      <!-- Banner Section Starts -->
+      <div class="hero min-h-screen bg-base-200">
+        <div class="hero-content flex-col lg:flex-row">
+          <div>
+            <h1 class="text-4xl md:text-7xl font-black">
+              It's good <br />
+              tea time at The <br />
+              Tea House
+            </h1>
+            <p class="py-6">
+              Tea and Botanical Solutions Supplier Give Optimum <br />
+              Satisfaction To Your Taste Buds.
+            </p>
+            <button
+              class="bg-gradient-to-r from-orange-400 via-orange-600 to-red-600 px-5 py-2 text-white rounded-lg mb-5 flex items-center gap-2"
+            >
+              Explore More <img class="w-2.5" src="./images/arrow.png" alt="" />
+            </button>
+          </div>
+          <div>
+            <img src="./images/banner.png" class="max-w-sm" />
+            <div
+              class="-mt-20 flex items-center gap-5 drop-shadow-lg w-60 bg-white p-4 rounded-xl"
+            >
+              <div>
+                <i class="fa-solid fa-star text-3xl text-amber-400"></i>
+              </div>
+              <div>
+                <h3 class="text-3xl font-black">5.00</h3>
+                <p class="font-semibold text-base">Trust Pilot Ratings</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Banner Section Ends -->
     </header>
     <!-- Header Section Ends -->
-    <main>
-
-    </main>
-    <footer>
-
-    </footer>
+    <main></main>
+    <footer></footer>
   </body>
 </html>
